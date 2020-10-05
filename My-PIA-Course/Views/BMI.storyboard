@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0pE-pb-ckU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StrucAndClass-->
+        <scene sceneID="KqZ-3F-1iA">
+            <objects>
+                <viewController storyboardIdentifier="BMICalculateVC" id="0pE-pb-ckU" userLabel="StrucAndClass" customClass="BMICalculateViewController" customModule="My_PIA_Course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIY-eN-fyu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-struc-and-class" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-Lc-CVd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Caculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9v-CX-z3k">
+                                <rect key="frame" x="20" y="30" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Structure And Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-U0-38h">
+                                <rect key="frame" x="138.5" y="70" width="137" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gPz-93-CEw">
+                                <rect key="frame" x="20" y="358.5" width="374" height="125"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="100" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-bu-bLK" userLabel="hightSlider">
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                        <color key="tintColor" name="Dark-and-Light-Label"/>
+                                        <connections>
+                                            <action selector="heightSliderChange:" destination="0pE-pb-ckU" eventType="valueChanged" id="iX1-uh-rna"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="I2X-GA-cBi">
+                                        <rect key="frame" x="0.0" y="38" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HI-9e-XqD" userLabel="textHeight">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150cm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-5Z-fFO">
+                                                <rect key="frame" x="212" y="0.0" width="162" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="20" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-9P-8J3" userLabel="weightSlider">
+                                        <rect key="frame" x="-2" y="66.5" width="378" height="31"/>
+                                        <color key="tintColor" name="Dark-and-Light-Label"/>
+                                        <connections>
+                                            <action selector="weightSliderChange:" destination="0pE-pb-ckU" eventType="valueChanged" id="b66-Dy-Phj"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uP0-ga-ihJ">
+                                        <rect key="frame" x="0.0" y="104.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGw-hb-i3I" userLabel="textWeight">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjw-sQ-Cmi">
+                                                <rect key="frame" x="212" y="0.0" width="162" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Dark-and-Light-Label"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvn-Tl-12J">
+                                <rect key="frame" x="50" y="716" width="314" height="70.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="tEc-2w-5z8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" name="Dark-and-Light-BGButton"/>
+                                <state key="normal" title="See Result" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" name="Dark-and-Light-Button"/>
+                                </state>
+                                <connections>
+                                    <action selector="getBMIResult:" destination="0pE-pb-ckU" eventType="touchUpInside" id="IU0-HR-8ak"/>
+                                    <segue destination="HsO-UV-99O" kind="show" identifier="identifierGoToBMIResultScreen" id="xtz-Js-9CU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uUb-Jx-4x1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="trailing" secondItem="g9v-CX-z3k" secondAttribute="trailing" constant="20" id="0dY-Mp-QyE"/>
+                            <constraint firstItem="qvn-Tl-12J" firstAttribute="leading" secondItem="uUb-Jx-4x1" secondAttribute="leading" constant="50" id="PIb-38-Efk"/>
+                            <constraint firstItem="Ke2-U0-38h" firstAttribute="centerX" secondItem="rIY-eN-fyu" secondAttribute="centerX" id="Uxx-zP-QSe"/>
+                            <constraint firstItem="gPz-93-CEw" firstAttribute="centerY" secondItem="rIY-eN-fyu" secondAttribute="centerY" id="XAH-ub-mdX"/>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="bottom" secondItem="aoE-Lc-CVd" secondAttribute="bottom" id="XbG-EY-neU"/>
+                            <constraint firstItem="gPz-93-CEw" firstAttribute="centerX" secondItem="rIY-eN-fyu" secondAttribute="centerX" id="bEc-ak-kjG"/>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="trailing" secondItem="gPz-93-CEw" secondAttribute="trailing" constant="20" id="dft-a7-MUM"/>
+                            <constraint firstItem="g9v-CX-z3k" firstAttribute="leading" secondItem="uUb-Jx-4x1" secondAttribute="leading" constant="20" id="fg1-IY-TK2"/>
+                            <constraint firstItem="aoE-Lc-CVd" firstAttribute="leading" secondItem="uUb-Jx-4x1" secondAttribute="leading" id="hG9-Uz-aeg"/>
+                            <constraint firstItem="Ke2-U0-38h" firstAttribute="top" secondItem="g9v-CX-z3k" secondAttribute="bottom" constant="4" id="kbe-B0-5Ml"/>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="bottom" secondItem="qvn-Tl-12J" secondAttribute="bottom" constant="20" id="mAH-tj-BeP"/>
+                            <constraint firstItem="gPz-93-CEw" firstAttribute="leading" secondItem="uUb-Jx-4x1" secondAttribute="leading" constant="20" id="mgB-JE-so3"/>
+                            <constraint firstItem="g9v-CX-z3k" firstAttribute="top" secondItem="uUb-Jx-4x1" secondAttribute="top" constant="30" id="op8-qA-G15"/>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="trailing" secondItem="aoE-Lc-CVd" secondAttribute="trailing" id="rOX-xM-HXk"/>
+                            <constraint firstItem="aoE-Lc-CVd" firstAttribute="top" secondItem="uUb-Jx-4x1" secondAttribute="top" id="s3N-M2-8Gb"/>
+                            <constraint firstItem="uUb-Jx-4x1" firstAttribute="trailing" secondItem="qvn-Tl-12J" secondAttribute="trailing" constant="50" id="uaQ-tn-pkE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GQQ-sM-TjY"/>
+                    <connections>
+                        <outlet property="heightSlider" destination="Q7W-bu-bLK" id="nza-iz-q1U"/>
+                        <outlet property="weightSlider" destination="cAe-9P-8J3" id="IFI-B9-1Sa"/>
+                        <outlet property="yourHeight" destination="Uby-5Z-fFO" id="r3t-aX-efv"/>
+                        <outlet property="yourWeight" destination="yjw-sQ-Cmi" id="6M8-mG-I4t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYA-Wy-Ssg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="228"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="vKb-IZ-suq">
+            <objects>
+                <viewController id="HsO-UV-99O" customClass="BMIResultViewController" customModule="My_PIA_Course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bHG-jz-1bn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-struc-and-class" translatesAutoresizingMaskIntoConstraints="NO" id="pDE-r9-CtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgZ-m2-rKl">
+                                <rect key="frame" x="50" y="716" width="314" height="70.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="17H-2H-O0D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" name="Dark-and-Light-BGButton"/>
+                                <state key="normal" title="Go Back" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" name="Dark-and-Light-Button"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0pE-pb-ckU" kind="show" id="Ciy-BN-PDG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iFP-H3-BlJ">
+                                <rect key="frame" x="30" y="246" width="354" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfO-70-gcs">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="96.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" name="Dark-and-Light-Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nii-UA-vB2">
+                                        <rect key="frame" x="0.0" y="126.5" width="354" height="97"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        <color key="textColor" name="Dark-and-Light-Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What you should do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivd-WN-f3z">
+                                        <rect key="frame" x="0.0" y="253.5" width="354" height="96.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" name="Dark-and-Light-Label"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="1qw-Im-A5G"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u5q-V4-h42"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u5q-V4-h42" firstAttribute="trailing" secondItem="pDE-r9-CtQ" secondAttribute="trailing" id="1yA-SX-UlD"/>
+                            <constraint firstItem="pDE-r9-CtQ" firstAttribute="top" secondItem="u5q-V4-h42" secondAttribute="top" id="7sq-dg-m7M"/>
+                            <constraint firstItem="NgZ-m2-rKl" firstAttribute="leading" secondItem="u5q-V4-h42" secondAttribute="leading" constant="50" id="Aw9-9P-VBG"/>
+                            <constraint firstItem="u5q-V4-h42" firstAttribute="trailing" secondItem="iFP-H3-BlJ" secondAttribute="trailing" constant="30" id="HKh-pH-2SF"/>
+                            <constraint firstItem="iFP-H3-BlJ" firstAttribute="leading" secondItem="u5q-V4-h42" secondAttribute="leading" constant="30" id="Qay-It-gTv"/>
+                            <constraint firstItem="pDE-r9-CtQ" firstAttribute="leading" secondItem="u5q-V4-h42" secondAttribute="leading" id="RJj-Ww-mgq"/>
+                            <constraint firstItem="iFP-H3-BlJ" firstAttribute="centerY" secondItem="bHG-jz-1bn" secondAttribute="centerY" id="hOh-Jf-RRj"/>
+                            <constraint firstItem="u5q-V4-h42" firstAttribute="bottom" secondItem="pDE-r9-CtQ" secondAttribute="bottom" id="lvG-s3-Var"/>
+                            <constraint firstItem="u5q-V4-h42" firstAttribute="trailing" secondItem="NgZ-m2-rKl" secondAttribute="trailing" constant="50" id="sug-4V-Urp"/>
+                            <constraint firstItem="u5q-V4-h42" firstAttribute="bottom" secondItem="NgZ-m2-rKl" secondAttribute="bottom" constant="20" id="ydI-Fy-RtZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pbs-nr-Okc"/>
+                    <connections>
+                        <outlet property="bmiResultLabel" destination="nii-UA-vB2" id="gnv-nZ-2N6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byT-fz-6Xt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-struc-and-class" width="900" height="1600"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="Dark-and-Light-BGButton">
+            <color red="0.37099999189376831" green="0.37099999189376831" blue="0.37099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark-and-Light-Button">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark-and-Light-Label">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
