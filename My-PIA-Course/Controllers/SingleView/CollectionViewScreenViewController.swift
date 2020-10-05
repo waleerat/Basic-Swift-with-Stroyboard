@@ -9,10 +9,10 @@ import UIKit
 
 class CollectionViewScreenViewController: UIViewController {
     var sectionItems = [
-        ["Sweden","Dammark","Norway","Thai"],
-        ["Stockholm", "Copenhegen","Oslo","Bangkok"]
+        ["Dannie","Sebastian","Frederik","Arne"],
+        ["Waleerat", "Emilia","Sara","Janifer"]
     ]
-    var HeaderItems = ["Country","City"]
+    var HeaderItems = ["Men","Women"]
 
     override func viewDidLoad() {
         navigationItem.title = "CollectionView"
@@ -46,6 +46,7 @@ extension CollectionViewScreenViewController: UICollectionViewDelegate,UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width/2.2, height: collectionView.frame.height/5)
     }
+    
     // MARK: - Header  ReuseHeader
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         

@@ -71,9 +71,21 @@
                                     <constraint firstAttribute="height" constant="50" id="WHA-Qk-gWK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="CoreML"/>
+                                <state key="normal" title="CoreML (not yet)"/>
                                 <connections>
                                     <segue destination="Tsz-yv-X7R" kind="show" id="hJf-jT-tLp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOu-JI-EAt">
+                                <rect key="frame" x="50" y="393" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="P9q-rV-Ebf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <segue destination="GTY-qN-bcQ" kind="show" id="1xk-Ad-fNH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,6 +95,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jce-Ho-Ckr" secondAttribute="trailing" constant="50" id="0oc-sj-KCX"/>
                             <constraint firstItem="62h-ia-3Av" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6XG-xS-0zu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UkC-M4-bwQ" secondAttribute="trailing" constant="50" id="7XP-Us-wdR"/>
+                            <constraint firstItem="fOu-JI-EAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7mY-hS-eG1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dAt-b8-HRJ" secondAttribute="trailing" constant="50" id="Ccq-io-1hN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="62h-ia-3Av" secondAttribute="trailing" constant="50" id="Cnt-7A-eUY"/>
                             <constraint firstItem="Ppi-Oa-cli" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LbX-N2-ft5"/>
@@ -95,6 +108,8 @@
                             <constraint firstItem="jce-Ho-Ckr" firstAttribute="top" secondItem="dAt-b8-HRJ" secondAttribute="bottom" constant="5" id="bzA-3u-jip"/>
                             <constraint firstItem="dAt-b8-HRJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cDt-oC-iE5"/>
                             <constraint firstItem="UkC-M4-bwQ" firstAttribute="top" secondItem="jce-Ho-Ckr" secondAttribute="bottom" constant="5" id="rlk-QW-xj5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOu-JI-EAt" secondAttribute="trailing" constant="50" id="ukO-Ro-D3b"/>
+                            <constraint firstItem="fOu-JI-EAt" firstAttribute="top" secondItem="62h-ia-3Av" secondAttribute="bottom" constant="10" id="ze7-Pd-N0M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mp2-ER-q50"/>
@@ -132,6 +147,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YN-BB-gH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628" y="-33"/>
+        </scene>
+        <!--GalleryVC-->
+        <scene sceneID="zcp-OU-xcA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="GalleryVC" storyboardName="Gallery" referencedIdentifier="GalleryVC" id="GTY-qN-bcQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tgj-G1-l0m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6k-E9-Z1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="23"/>
         </scene>
         <!--AuthenticationVC-->
         <scene sceneID="TNK-Xv-kei">

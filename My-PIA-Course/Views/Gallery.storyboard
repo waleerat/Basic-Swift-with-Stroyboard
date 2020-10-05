@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gallery-->
+        <scene sceneID="hYz-71-1Fi">
+            <objects>
+                <viewController storyboardIdentifier="GalleryVC" id="GmW-5Z-aQb" userLabel="Gallery" customClass="GalleryViewController" customModule="My_PIA_Course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iy2-IB-29q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO3-5I-tIv">
+                                <rect key="frame" x="169.5" y="108" width="75.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" name="Dark-and-Light-BGButton"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aae-E7-HZK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aO3-5I-tIv" firstAttribute="centerX" secondItem="iy2-IB-29q" secondAttribute="centerX" id="MYw-35-lWa"/>
+                            <constraint firstItem="aO3-5I-tIv" firstAttribute="top" secondItem="aae-E7-HZK" secondAttribute="top" constant="20" id="MnR-vA-2gi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wPu-PF-XIz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="gG0-ff-zdW">
+                            <connections>
+                                <segue destination="q8d-Gt-Vy2" kind="show" id="P33-eZ-oo1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bE-fZ-3II" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.7391304347827" y="39.508928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6SF-3l-7dM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LPB-FZ-uGX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l1y-21-aaj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GmW-5Z-aQb" kind="relationship" relationship="rootViewController" id="TWa-eu-DEb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoM-wv-JIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.59420289855075" y="39.508928571428569"/>
+        </scene>
+        <!--Upload And Download View Controller-->
+        <scene sceneID="hgn-S3-AIl">
+            <objects>
+                <viewController id="q8d-Gt-Vy2" customClass="UploadAndDownloadViewController" customModule="My_PIA_Course" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I6H-Ae-mwf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RW9-tn-mCB">
+                                <rect key="frame" x="20" y="108" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8f-AP-cyc">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xWy-Nw-YbO"/>
+                                        </constraints>
+                                        <state key="normal" title="Pull Image">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pullImageTapped:" destination="q8d-Gt-Vy2" eventType="touchUpInside" id="xAb-eP-W1V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-aE-IGv">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FBE-g4-34W"/>
+                                        </constraints>
+                                        <state key="normal" title="Upload Image">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadImageTapped:" destination="q8d-Gt-Vy2" eventType="touchUpInside" id="8Pn-g4-1c9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yMs-GT-GO1">
+                                <rect key="frame" x="20" y="168" width="374" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="lsS-ka-tJU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="77k-6M-d7b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yMs-GT-GO1" firstAttribute="leading" secondItem="77k-6M-d7b" secondAttribute="leading" constant="20" id="Hi8-tY-Jq3"/>
+                            <constraint firstItem="RW9-tn-mCB" firstAttribute="top" secondItem="77k-6M-d7b" secondAttribute="top" constant="20" id="Ld1-lx-3M1"/>
+                            <constraint firstItem="77k-6M-d7b" firstAttribute="trailing" secondItem="yMs-GT-GO1" secondAttribute="trailing" constant="20" id="Q0i-ki-KGU"/>
+                            <constraint firstItem="RW9-tn-mCB" firstAttribute="leading" secondItem="77k-6M-d7b" secondAttribute="leading" constant="20" id="Q6c-Kg-XUD"/>
+                            <constraint firstItem="yMs-GT-GO1" firstAttribute="top" secondItem="RW9-tn-mCB" secondAttribute="bottom" constant="10" id="dVc-QL-5rt"/>
+                            <constraint firstItem="77k-6M-d7b" firstAttribute="trailing" secondItem="RW9-tn-mCB" secondAttribute="trailing" constant="20" id="vId-xH-swv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uri-zq-EbB"/>
+                    <connections>
+                        <outlet property="imageDownloaded" destination="yMs-GT-GO1" id="v7x-gn-BdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAf-O7-sby" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Dark-and-Light-BGButton">
+            <color red="0.37099999189376831" green="0.37099999189376831" blue="0.37099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

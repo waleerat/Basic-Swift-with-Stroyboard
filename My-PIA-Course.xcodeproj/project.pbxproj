@@ -50,6 +50,10 @@
 		AB4CC81A2529BC74005E710F /* CountryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8192529BC74005E710F /* CountryTableViewController.swift */; };
 		AB4CC841252A3F06005E710F /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC840252A3F05005E710F /* CoreML.storyboard */; };
 		AB4CC84A252A4CC6005E710F /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */; };
+		AB4CC84D252B0754005E710F /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC84C252B0754005E710F /* Gallery.storyboard */; };
+		AB4CC851252B0837005E710F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC850252B0837005E710F /* GalleryViewController.swift */; };
+		AB4CC87F252B32FE005E710F /* UploadAndDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */; };
+		AB4CC89B252B432B005E710F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC89A252B432B005E710F /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,10 @@
 		AB4CC8192529BC74005E710F /* CountryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewController.swift; sourceTree = "<group>"; };
 		AB4CC840252A3F05005E710F /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
+		AB4CC84C252B0754005E710F /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		AB4CC850252B0837005E710F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadAndDownloadViewController.swift; path = "My-PIA-Course/Views/UploadAndDownloadViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AB4CC89A252B432B005E710F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		E2D4180A28D0DDB43BF8E71D /* Pods-My-PIA-Course.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-PIA-Course.release.xcconfig"; path = "Target Support Files/Pods-My-PIA-Course/Pods-My-PIA-Course.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,13 +175,14 @@
 		AB3D5A822526503C0099FC88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB3D5A7825264FAB0099FC88 /* LaunchScreen.storyboard */,
 				AB3D5A7325264FA80099FC88 /* Main.storyboard */,
 				AB3D5A8E2526526E0099FC88 /* SingleView.storyboard */,
 				AB3D5A85252651FD0099FC88 /* BMI.storyboard */,
 				AB3D5AD42526706A0099FC88 /* Authentication.storyboard */,
-				AB3D5A7825264FAB0099FC88 /* LaunchScreen.storyboard */,
 				AB3D5B40252728390099FC88 /* Firebase.storyboard */,
 				AB4CC840252A3F05005E710F /* CoreML.storyboard */,
+				AB4CC84C252B0754005E710F /* Gallery.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 		AB3D5A83252650450099FC88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB4CC84F252B081F005E710F /* Gallery */,
 				AB4CC843252A3F3A005E710F /* CoreML */,
 				AB3D5B43252728490099FC88 /* Firebase */,
 				AB3D5B1C252686160099FC88 /* Authentication */,
@@ -236,6 +246,7 @@
 		AB3D5AFB252675920099FC88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB4CC899252B4310005E710F /* Gallery */,
 				AB3D5B852527EF420099FC88 /* TempCode.swift */,
 				AB3D5B44252728590099FC88 /* Firebase */,
 				AB3D5B03252675C20099FC88 /* Authentication */,
@@ -293,6 +304,23 @@
 				AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		AB4CC84F252B081F005E710F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */,
+				AB4CC850252B0837005E710F /* GalleryViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		AB4CC899252B4310005E710F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				AB4CC89A252B432B005E710F /* Images.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3D5AD52526706A0099FC88 /* Authentication.storyboard in Resources */,
+				AB4CC84D252B0754005E710F /* Gallery.storyboard in Resources */,
 				AB3D5A7A25264FAB0099FC88 /* LaunchScreen.storyboard in Resources */,
 				AB3D5A86252651FD0099FC88 /* BMI.storyboard in Resources */,
 				AB3D5B41252728390099FC88 /* Firebase.storyboard in Resources */,
@@ -416,6 +445,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3D5B01252675BC0099FC88 /* UserInfo.swift in Sources */,
+				AB4CC851252B0837005E710F /* GalleryViewController.swift in Sources */,
+				AB4CC87F252B32FE005E710F /* UploadAndDownloadViewController.swift in Sources */,
 				AB4CC81A2529BC74005E710F /* CountryTableViewController.swift in Sources */,
 				AB3D5AF82526749E0099FC88 /* BasicManageDataViewController.swift in Sources */,
 				AB3D5B552527425C0099FC88 /* Profile.swift in Sources */,
@@ -426,6 +457,7 @@
 				AB3D5ACA25266A270099FC88 /* HomeSingleViewController.swift in Sources */,
 				AB3D5B6C2527D7630099FC88 /* ContinentCollectionViewCell.swift in Sources */,
 				AB3D5AAE252666AA0099FC88 /* BMIResultViewController.swift in Sources */,
+				AB4CC89B252B432B005E710F /* Images.swift in Sources */,
 				AB3D5B00252675BC0099FC88 /* UserRefference.swift in Sources */,
 				AB3D5B512527416B0099FC88 /* Country.swift in Sources */,
 				AB3D5AC4252668C90099FC88 /* ImageViewController.swift in Sources */,
