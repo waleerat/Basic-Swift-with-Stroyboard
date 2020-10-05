@@ -12,6 +12,7 @@ private let reuseIdentifier = "Cell"
 class SimpleCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
+//        Note : Sample code is in the Controllers/SingleView/CollectionViewScreenViewController
         super.viewDidLoad()
         navigationItem.title = "Collection View"
         // Uncomment the following line to preserve selection between presentations
