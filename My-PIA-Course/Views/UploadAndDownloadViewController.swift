@@ -68,7 +68,6 @@ class UploadAndDownloadViewController: UIViewController, UIImagePickerController
             print(url)
             uploadToCloud(fileURL: url)
         }
-        
         imagePickerController.dismiss(animated: true, completion: nil)
     }
     
@@ -91,8 +90,6 @@ class UploadAndDownloadViewController: UIViewController, UIImagePickerController
             print("Photo Upload")
             
         }
-        
-        
     }
     
 }

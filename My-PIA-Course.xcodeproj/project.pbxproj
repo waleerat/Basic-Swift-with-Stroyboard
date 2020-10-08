@@ -51,9 +51,16 @@
 		AB4CC841252A3F06005E710F /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC840252A3F05005E710F /* CoreML.storyboard */; };
 		AB4CC84A252A4CC6005E710F /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */; };
 		AB4CC84D252B0754005E710F /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC84C252B0754005E710F /* Gallery.storyboard */; };
-		AB4CC851252B0837005E710F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC850252B0837005E710F /* GalleryViewController.swift */; };
+		AB4CC851252B0837005E710F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC850252B0837005E710F /* AlbumViewController.swift */; };
 		AB4CC87F252B32FE005E710F /* UploadAndDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */; };
 		AB4CC89B252B432B005E710F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC89A252B432B005E710F /* Images.swift */; };
+		AB4CC8A1252BAFF8005E710F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8A0252BAFF8005E710F /* CameraViewController.swift */; };
+		AB4CC8A4252BB00B005E710F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8A3252BB00B005E710F /* VideoViewController.swift */; };
+		AB4CC8A7252BBA2A005E710F /* AlbumCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8A6252BBA29005E710F /* AlbumCollectionReusableView.swift */; };
+		AB4CC8AA252BBE7B005E710F /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8A9252BBE7B005E710F /* AlbumCollectionViewCell.swift */; };
+		AB4CC8AD252C577A005E710F /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC8AC252C577A005E710F /* Sample.storyboard */; };
+		AB4CC8B0252C57E6005E710F /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8AF252C57E6005E710F /* SampleViewController.swift */; };
+		AB4CC8BA252C6AE3005E710F /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8B9252C6AE2005E710F /* UploadImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,9 +111,16 @@
 		AB4CC840252A3F05005E710F /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		AB4CC84C252B0754005E710F /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
-		AB4CC850252B0837005E710F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		AB4CC850252B0837005E710F /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadAndDownloadViewController.swift; path = "My-PIA-Course/Views/UploadAndDownloadViewController.swift"; sourceTree = SOURCE_ROOT; };
 		AB4CC89A252B432B005E710F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		AB4CC8A0252BAFF8005E710F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		AB4CC8A3252BB00B005E710F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		AB4CC8A6252BBA29005E710F /* AlbumCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionReusableView.swift; sourceTree = "<group>"; };
+		AB4CC8A9252BBE7B005E710F /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB4CC8AC252C577A005E710F /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
+		AB4CC8AF252C57E6005E710F /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleViewController.swift; path = Sanple/SampleViewController.swift; sourceTree = "<group>"; };
+		AB4CC8B9252C6AE2005E710F /* UploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		E2D4180A28D0DDB43BF8E71D /* Pods-My-PIA-Course.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My-PIA-Course.release.xcconfig"; path = "Target Support Files/Pods-My-PIA-Course/Pods-My-PIA-Course.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +197,7 @@
 				AB3D5B40252728390099FC88 /* Firebase.storyboard */,
 				AB4CC840252A3F05005E710F /* CoreML.storyboard */,
 				AB4CC84C252B0754005E710F /* Gallery.storyboard */,
+				AB4CC8AC252C577A005E710F /* Sample.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +214,7 @@
 				AB3D5AB12526670F0099FC88 /* CollectionView */,
 				AB3D5AA42526660F0099FC88 /* BMICalculator */,
 				AB3D5A7125264FA80099FC88 /* ViewController.swift */,
+				AB4CC8AF252C57E6005E710F /* SampleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,7 +326,12 @@
 			isa = PBXGroup;
 			children = (
 				AB4CC87E252B32FE005E710F /* UploadAndDownloadViewController.swift */,
-				AB4CC850252B0837005E710F /* GalleryViewController.swift */,
+				AB4CC850252B0837005E710F /* AlbumViewController.swift */,
+				AB4CC8A0252BAFF8005E710F /* CameraViewController.swift */,
+				AB4CC8A3252BB00B005E710F /* VideoViewController.swift */,
+				AB4CC8A6252BBA29005E710F /* AlbumCollectionReusableView.swift */,
+				AB4CC8A9252BBE7B005E710F /* AlbumCollectionViewCell.swift */,
+				AB4CC8B9252C6AE2005E710F /* UploadImageViewController.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -389,6 +410,7 @@
 				AB3D5B41252728390099FC88 /* Firebase.storyboard in Resources */,
 				AB3D5A8F2526526E0099FC88 /* SingleView.storyboard in Resources */,
 				AB3D5A7725264FAB0099FC88 /* Assets.xcassets in Resources */,
+				AB4CC8AD252C577A005E710F /* Sample.storyboard in Resources */,
 				AB3D5A7525264FA80099FC88 /* Main.storyboard in Resources */,
 				AB3D5B06252676DE0099FC88 /* GoogleService-Info.plist in Resources */,
 				AB4CC841252A3F06005E710F /* CoreML.storyboard in Resources */,
@@ -445,12 +467,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3D5B01252675BC0099FC88 /* UserInfo.swift in Sources */,
-				AB4CC851252B0837005E710F /* GalleryViewController.swift in Sources */,
+				AB4CC851252B0837005E710F /* AlbumViewController.swift in Sources */,
 				AB4CC87F252B32FE005E710F /* UploadAndDownloadViewController.swift in Sources */,
 				AB4CC81A2529BC74005E710F /* CountryTableViewController.swift in Sources */,
 				AB3D5AF82526749E0099FC88 /* BasicManageDataViewController.swift in Sources */,
+				AB4CC8A1252BAFF8005E710F /* CameraViewController.swift in Sources */,
 				AB3D5B552527425C0099FC88 /* Profile.swift in Sources */,
 				AB3D5B2B25268CC00099FC88 /* HomeViewController.swift in Sources */,
+				AB4CC8B0252C57E6005E710F /* SampleViewController.swift in Sources */,
 				AB3D5AB32526679E0099FC88 /* SimpleCollectionViewCell.swift in Sources */,
 				AB3D5B6F2527E47A0099FC88 /* CountryTableViewCell.swift in Sources */,
 				AB4CC84A252A4CC6005E710F /* CoreMLViewController.swift in Sources */,
@@ -467,13 +491,17 @@
 				AB3D5ABD2526685E0099FC88 /* TableViewViewController.swift in Sources */,
 				AB3D5AAB252666590099FC88 /* BMICalculateViewController.swift in Sources */,
 				AB3D5B3B252708DD0099FC88 /* CollectionViewCell.swift in Sources */,
+				AB4CC8AA252BBE7B005E710F /* AlbumCollectionViewCell.swift in Sources */,
+				AB4CC8A4252BB00B005E710F /* VideoViewController.swift in Sources */,
 				AB3D5ABE2526685E0099FC88 /* TableViewTableViewCell.swift in Sources */,
+				AB4CC8A7252BBA2A005E710F /* AlbumCollectionReusableView.swift in Sources */,
 				AB3D5B602527AD2D0099FC88 /* HeaderCollectionReusableView.swift in Sources */,
 				AB3D5B5A252761090099FC88 /* CountryViewController.swift in Sources */,
 				AB3D5A7225264FA80099FC88 /* ViewController.swift in Sources */,
 				AB3D5B252526868D0099FC88 /* SignupViewController.swift in Sources */,
 				AB3D5AB6252667D00099FC88 /* SimpleCollectionViewController.swift in Sources */,
 				AB3D5B22252686710099FC88 /* SigninViewController.swift in Sources */,
+				AB4CC8BA252C6AE3005E710F /* UploadImageViewController.swift in Sources */,
 				AB3D5B862527EF430099FC88 /* TempCode.swift in Sources */,
 				AB3D5A6E25264FA80099FC88 /* AppDelegate.swift in Sources */,
 				AB3D5A7025264FA80099FC88 /* SceneDelegate.swift in Sources */,
@@ -556,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -611,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -628,6 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD74G4QNW2;
 				INFOPLIST_FILE = "My-PIA-Course/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,6 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD74G4QNW2;
 				INFOPLIST_FILE = "My-PIA-Course/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

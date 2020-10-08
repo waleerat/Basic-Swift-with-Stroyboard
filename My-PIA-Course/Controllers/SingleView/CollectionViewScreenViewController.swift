@@ -8,6 +8,7 @@
 import UIKit
 
 class CollectionViewScreenViewController: UIViewController {
+    
     var sectionItems = [
         ["Dannie","Sebastian","Frederik","Arne"],
         ["Waleerat", "Emilia","Sara","Janifer"]

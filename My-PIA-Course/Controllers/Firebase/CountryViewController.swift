@@ -13,8 +13,9 @@ import Firebase
 class CountryViewController: UIViewController {
     
     @IBOutlet weak var countryNameTextfield: UITextField!
-    @IBOutlet weak var countriesTableVeiw: UITableView!
     @IBOutlet weak var capitalNameTextfield: UITextField!
+    
+    @IBOutlet weak var countriesTableVeiw: UITableView!
    
     var selectedContinent: String!
      
@@ -56,15 +57,21 @@ class CountryViewController: UIViewController {
                         return
                     }
                     // get data
+                        /* Example of compactMap and map
+                         let possibleNumbers = ["1", "2", "three", "///4///", "5"]
+
+                         let mapped: [Int?] = possibleNumbers.map { str in Int(str) }
+                         // [1, 2, nil, nil, 5]
+
+                         let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
+                         // [1, 2, 5]
+                         */
+                        
                     self.itemArray = documents.compactMap({ (QueryDocumentSnapshot) -> Country? in
                        return try? QueryDocumentSnapshot.data(as: Country.self)
                     })
                     
-                    for _ in self.itemArray {
-                        DispatchQueue.main.async {
-                            self.countriesTableVeiw.reloadData()
-                        }
-                    }
+                    self.countriesTableVeiw.reloadData()
                 }
             }
             
