@@ -38,7 +38,7 @@ extension ContinentViewController : UICollectionViewDelegate, UICollectionViewDa
         performSegue(withIdentifier: "seguGotoContryScreen", sender: self)
     }
    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { 
         let countryVC = segue.destination as! CountryViewController
         countryVC.selectedContinent = (selectedItem!) as? String
     }

@@ -66,7 +66,7 @@ class CountryViewController: UIViewController {
                          let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
                          // [1, 2, 5]
                          */
-                        
+                     // Country parameter is structure 
                     self.itemArray = documents.compactMap({ (QueryDocumentSnapshot) -> Country? in
                        return try? QueryDocumentSnapshot.data(as: Country.self)
                     })

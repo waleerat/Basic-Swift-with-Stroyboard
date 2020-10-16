@@ -5,7 +5,7 @@
 //  Created by Waleerat Gottlieb on 2020-10-05.
 //
 import UIKit
-import FirebaseStorage
+//import FirebaseStorage
 import Firebase
 import FirebaseUI
  

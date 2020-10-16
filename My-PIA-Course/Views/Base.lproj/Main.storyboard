@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nH9-aZ-zcM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -88,17 +89,33 @@
                                     <segue destination="GTY-qN-bcQ" kind="show" id="1xk-Ad-fNH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PK-Jq-H8g">
+                                <rect key="frame" x="50" y="453" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Xv-L2-MpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="TinderCard"/>
+                                <connections>
+                                    <segue destination="b2R-k7-wYN" kind="show" id="qAH-SU-ajT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jce-Ho-Ckr" secondAttribute="trailing" constant="50" id="0oc-sj-KCX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8PK-Jq-H8g" secondAttribute="trailing" constant="50" id="2tH-9U-Q6V"/>
+                            <constraint firstItem="8PK-Jq-H8g" firstAttribute="top" secondItem="fOu-JI-EAt" secondAttribute="bottom" constant="10" id="4j8-Q0-mNx"/>
                             <constraint firstItem="62h-ia-3Av" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6XG-xS-0zu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UkC-M4-bwQ" secondAttribute="trailing" constant="50" id="7XP-Us-wdR"/>
                             <constraint firstItem="fOu-JI-EAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="7mY-hS-eG1"/>
+                            <constraint firstItem="8PK-Jq-H8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="BZn-UU-bN5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dAt-b8-HRJ" secondAttribute="trailing" constant="50" id="Ccq-io-1hN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="62h-ia-3Av" secondAttribute="trailing" constant="50" id="Cnt-7A-eUY"/>
                             <constraint firstItem="Ppi-Oa-cli" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LbX-N2-ft5"/>
+                            <constraint firstItem="8PK-Jq-H8g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Lc3-27-7L1"/>
                             <constraint firstItem="62h-ia-3Av" firstAttribute="top" secondItem="UkC-M4-bwQ" secondAttribute="bottom" constant="10" id="MRt-HR-ZEY"/>
                             <constraint firstItem="dAt-b8-HRJ" firstAttribute="top" secondItem="Ppi-Oa-cli" secondAttribute="bottom" constant="5" id="NgV-zp-4qH"/>
                             <constraint firstItem="jce-Ho-Ckr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Vhs-bm-M34"/>
@@ -107,7 +124,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ppi-Oa-cli" secondAttribute="trailing" constant="50" id="Yzb-gc-M7P"/>
                             <constraint firstItem="jce-Ho-Ckr" firstAttribute="top" secondItem="dAt-b8-HRJ" secondAttribute="bottom" constant="5" id="bzA-3u-jip"/>
                             <constraint firstItem="dAt-b8-HRJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cDt-oC-iE5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8PK-Jq-H8g" secondAttribute="trailing" constant="50" id="mzP-b0-NHJ"/>
                             <constraint firstItem="UkC-M4-bwQ" firstAttribute="top" secondItem="jce-Ho-Ckr" secondAttribute="bottom" constant="5" id="rlk-QW-xj5"/>
+                            <constraint firstItem="8PK-Jq-H8g" firstAttribute="top" secondItem="fOu-JI-EAt" secondAttribute="bottom" constant="10" id="shC-ix-c0V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fOu-JI-EAt" secondAttribute="trailing" constant="50" id="ukO-Ro-D3b"/>
                             <constraint firstItem="fOu-JI-EAt" firstAttribute="top" secondItem="62h-ia-3Av" secondAttribute="bottom" constant="10" id="ze7-Pd-N0M"/>
                         </constraints>
@@ -157,6 +176,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6k-E9-Z1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1593" y="23"/>
+        </scene>
+        <!--TinderCardVC-->
+        <scene sceneID="yTb-dV-bXg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TinderCardVC" storyboardName="TinderCard" referencedIdentifier="TinderCardVC" id="b2R-k7-wYN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MAO-Gk-Zt2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtN-MS-VWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="103"/>
         </scene>
         <!--AuthenticationVC-->
         <scene sceneID="TNK-Xv-kei">

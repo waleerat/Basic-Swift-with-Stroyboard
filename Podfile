@@ -12,6 +12,9 @@ target 'My-PIA-Course' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   
+  pod 'Shuffle-iOS'
+  pod 'PopBounceButton'
+  
   
   pod 'IQKeyboardManager' #Keyboard
   pod 'SwipeCellKit' #swipe TableCell

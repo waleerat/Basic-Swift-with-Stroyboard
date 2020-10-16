@@ -312,10 +312,14 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
+  - pop (1.0.12)
+  - PopBounceButton (1.2.2):
+    - pop (~> 1.0)
   - PromisesObjC (1.2.10)
   - SDWebImage (5.9.2):
     - SDWebImage/Core (= 5.9.2)
   - SDWebImage/Core (5.9.2)
+  - Shuffle-iOS (0.4.0)
   - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
@@ -325,6 +329,8 @@ DEPENDENCIES:
   - FirebaseFirestoreSwift
   - FirebaseUI/Storage
   - IQKeyboardManager
+  - PopBounceButton
+  - Shuffle-iOS
   - SwipeCellKit
 
 SPEC REPOS:
@@ -347,8 +353,11 @@ SPEC REPOS:
     - IQKeyboardManager
     - leveldb-library
     - nanopb
+    - pop
+    - PopBounceButton
     - PromisesObjC
     - SDWebImage
+    - Shuffle-iOS
     - SwipeCellKit
 
 SPEC CHECKSUMS:
@@ -370,10 +379,13 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  PopBounceButton: 34105a012678222f058f8d2621672724a3d5c9fb
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SDWebImage: 0b42b8719ab0c5257177d5894306e8a336b21cbb
+  Shuffle-iOS: 87e4d3503475f3d684a375358649911e36fe139f
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: 06c1caa3f36f619ea9be3ec56841ed332f6ca414
+PODFILE CHECKSUM: c3aef81e23ad25a3b4eaf240bdda5793f488eb52
 
 COCOAPODS: 1.9.3

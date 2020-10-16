@@ -47,6 +47,15 @@
 		AB3D5B6C2527D7630099FC88 /* ContinentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D5B6B2527D7620099FC88 /* ContinentCollectionViewCell.swift */; };
 		AB3D5B6F2527E47A0099FC88 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D5B6E2527E47A0099FC88 /* CountryTableViewCell.swift */; };
 		AB3D5B862527EF430099FC88 /* TempCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3D5B852527EF420099FC88 /* TempCode.swift */; };
+		AB3EF59E25313B72004A74F7 /* TinderCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF59A25313B71004A74F7 /* TinderCardOverlay.swift */; };
+		AB3EF59F25313B72004A74F7 /* TinderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF59B25313B71004A74F7 /* TinderCardModel.swift */; };
+		AB3EF5A025313B72004A74F7 /* TinderCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF59C25313B71004A74F7 /* TinderCardContentView.swift */; };
+		AB3EF5A125313B72004A74F7 /* TinderCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF59D25313B72004A74F7 /* TinderCardFooterView.swift */; };
+		AB3EF5A525313BA6004A74F7 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF5A425313BA6004A74F7 /* TinderViewController.swift */; };
+		AB3EF5A925313BBE004A74F7 /* TinderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF5A725313BBE004A74F7 /* TinderButton.swift */; };
+		AB3EF5AA25313BBE004A74F7 /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF5A825313BBE004A74F7 /* ButtonStackView.swift */; };
+		AB3EF5AD25313BD5004A74F7 /* TinderCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3EF5AC25313BD5004A74F7 /* TinderCard.storyboard */; };
+		AB3EF5CF253140F5004A74F7 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EF5CE253140F5004A74F7 /* UIView+Extensions.swift */; };
 		AB4CC81A2529BC74005E710F /* CountryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC8192529BC74005E710F /* CountryTableViewController.swift */; };
 		AB4CC841252A3F06005E710F /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4CC840252A3F05005E710F /* CoreML.storyboard */; };
 		AB4CC84A252A4CC6005E710F /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */; };
@@ -107,6 +116,15 @@
 		AB3D5B6B2527D7620099FC88 /* ContinentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB3D5B6E2527E47A0099FC88 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		AB3D5B852527EF420099FC88 /* TempCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCode.swift; sourceTree = "<group>"; };
+		AB3EF59A25313B71004A74F7 /* TinderCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardOverlay.swift; sourceTree = "<group>"; };
+		AB3EF59B25313B71004A74F7 /* TinderCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardModel.swift; sourceTree = "<group>"; };
+		AB3EF59C25313B71004A74F7 /* TinderCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardContentView.swift; sourceTree = "<group>"; };
+		AB3EF59D25313B72004A74F7 /* TinderCardFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardFooterView.swift; sourceTree = "<group>"; };
+		AB3EF5A425313BA6004A74F7 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		AB3EF5A725313BBE004A74F7 /* TinderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderButton.swift; sourceTree = "<group>"; };
+		AB3EF5A825313BBE004A74F7 /* ButtonStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
+		AB3EF5AC25313BD5004A74F7 /* TinderCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TinderCard.storyboard; sourceTree = "<group>"; };
+		AB3EF5CE253140F5004A74F7 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		AB4CC8192529BC74005E710F /* CountryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewController.swift; sourceTree = "<group>"; };
 		AB4CC840252A3F05005E710F /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		AB4CC849252A4CC6005E710F /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +216,7 @@
 				AB4CC840252A3F05005E710F /* CoreML.storyboard */,
 				AB4CC84C252B0754005E710F /* Gallery.storyboard */,
 				AB4CC8AC252C577A005E710F /* Sample.storyboard */,
+				AB3EF5AC25313BD5004A74F7 /* TinderCard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +224,7 @@
 		AB3D5A83252650450099FC88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB3EF5A325313B92004A74F7 /* TinderCard */,
 				AB4CC84F252B081F005E710F /* Gallery */,
 				AB4CC843252A3F3A005E710F /* CoreML */,
 				AB3D5B43252728490099FC88 /* Firebase */,
@@ -262,6 +282,7 @@
 		AB3D5AFB252675920099FC88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB3EF59925313B4F004A74F7 /* TinderCard */,
 				AB4CC899252B4310005E710F /* Gallery */,
 				AB3D5B852527EF420099FC88 /* TempCode.swift */,
 				AB3D5B44252728590099FC88 /* Firebase */,
@@ -312,6 +333,28 @@
 				AB3D5B542527425C0099FC88 /* Profile.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		AB3EF59925313B4F004A74F7 /* TinderCard */ = {
+			isa = PBXGroup;
+			children = (
+				AB3EF59C25313B71004A74F7 /* TinderCardContentView.swift */,
+				AB3EF59D25313B72004A74F7 /* TinderCardFooterView.swift */,
+				AB3EF59B25313B71004A74F7 /* TinderCardModel.swift */,
+				AB3EF59A25313B71004A74F7 /* TinderCardOverlay.swift */,
+			);
+			path = TinderCard;
+			sourceTree = "<group>";
+		};
+		AB3EF5A325313B92004A74F7 /* TinderCard */ = {
+			isa = PBXGroup;
+			children = (
+				AB3EF5A825313BBE004A74F7 /* ButtonStackView.swift */,
+				AB3EF5CE253140F5004A74F7 /* UIView+Extensions.swift */,
+				AB3EF5A725313BBE004A74F7 /* TinderButton.swift */,
+				AB3EF5A425313BA6004A74F7 /* TinderViewController.swift */,
+			);
+			path = TinderCard;
 			sourceTree = "<group>";
 		};
 		AB4CC843252A3F3A005E710F /* CoreML */ = {
@@ -407,6 +450,7 @@
 				AB4CC84D252B0754005E710F /* Gallery.storyboard in Resources */,
 				AB3D5A7A25264FAB0099FC88 /* LaunchScreen.storyboard in Resources */,
 				AB3D5A86252651FD0099FC88 /* BMI.storyboard in Resources */,
+				AB3EF5AD25313BD5004A74F7 /* TinderCard.storyboard in Resources */,
 				AB3D5B41252728390099FC88 /* Firebase.storyboard in Resources */,
 				AB3D5A8F2526526E0099FC88 /* SingleView.storyboard in Resources */,
 				AB3D5A7725264FAB0099FC88 /* Assets.xcassets in Resources */,
@@ -468,6 +512,7 @@
 			files = (
 				AB3D5B01252675BC0099FC88 /* UserInfo.swift in Sources */,
 				AB4CC851252B0837005E710F /* AlbumViewController.swift in Sources */,
+				AB3EF5CF253140F5004A74F7 /* UIView+Extensions.swift in Sources */,
 				AB4CC87F252B32FE005E710F /* UploadAndDownloadViewController.swift in Sources */,
 				AB4CC81A2529BC74005E710F /* CountryTableViewController.swift in Sources */,
 				AB3D5AF82526749E0099FC88 /* BasicManageDataViewController.swift in Sources */,
@@ -475,6 +520,8 @@
 				AB3D5B552527425C0099FC88 /* Profile.swift in Sources */,
 				AB3D5B2B25268CC00099FC88 /* HomeViewController.swift in Sources */,
 				AB4CC8B0252C57E6005E710F /* SampleViewController.swift in Sources */,
+				AB3EF5A125313B72004A74F7 /* TinderCardFooterView.swift in Sources */,
+				AB3EF5A025313B72004A74F7 /* TinderCardContentView.swift in Sources */,
 				AB3D5AB32526679E0099FC88 /* SimpleCollectionViewCell.swift in Sources */,
 				AB3D5B6F2527E47A0099FC88 /* CountryTableViewCell.swift in Sources */,
 				AB4CC84A252A4CC6005E710F /* CoreMLViewController.swift in Sources */,
@@ -483,6 +530,7 @@
 				AB3D5AAE252666AA0099FC88 /* BMIResultViewController.swift in Sources */,
 				AB4CC89B252B432B005E710F /* Images.swift in Sources */,
 				AB3D5B00252675BC0099FC88 /* UserRefference.swift in Sources */,
+				AB3EF59F25313B72004A74F7 /* TinderCardModel.swift in Sources */,
 				AB3D5B512527416B0099FC88 /* Country.swift in Sources */,
 				AB3D5AC4252668C90099FC88 /* ImageViewController.swift in Sources */,
 				AB3D5B4D252741290099FC88 /* City.swift in Sources */,
@@ -490,13 +538,17 @@
 				AB3D5B4725272B3C0099FC88 /* DashboardViewController.swift in Sources */,
 				AB3D5ABD2526685E0099FC88 /* TableViewViewController.swift in Sources */,
 				AB3D5AAB252666590099FC88 /* BMICalculateViewController.swift in Sources */,
+				AB3EF5AA25313BBE004A74F7 /* ButtonStackView.swift in Sources */,
 				AB3D5B3B252708DD0099FC88 /* CollectionViewCell.swift in Sources */,
 				AB4CC8AA252BBE7B005E710F /* AlbumCollectionViewCell.swift in Sources */,
 				AB4CC8A4252BB00B005E710F /* VideoViewController.swift in Sources */,
 				AB3D5ABE2526685E0099FC88 /* TableViewTableViewCell.swift in Sources */,
+				AB3EF5A925313BBE004A74F7 /* TinderButton.swift in Sources */,
 				AB4CC8A7252BBA2A005E710F /* AlbumCollectionReusableView.swift in Sources */,
 				AB3D5B602527AD2D0099FC88 /* HeaderCollectionReusableView.swift in Sources */,
+				AB3EF5A525313BA6004A74F7 /* TinderViewController.swift in Sources */,
 				AB3D5B5A252761090099FC88 /* CountryViewController.swift in Sources */,
+				AB3EF59E25313B72004A74F7 /* TinderCardOverlay.swift in Sources */,
 				AB3D5A7225264FA80099FC88 /* ViewController.swift in Sources */,
 				AB3D5B252526868D0099FC88 /* SignupViewController.swift in Sources */,
 				AB3D5AB6252667D00099FC88 /* SimpleCollectionViewController.swift in Sources */,
